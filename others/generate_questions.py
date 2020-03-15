@@ -10,6 +10,12 @@ def generate_questions(input, output, delimiter):
     print(input)
     print(output)
     print(delimiter)
+    QUESTION_COLUMN = 2
+    SUB_QUESTION_COLUMN = QUESTION_COLUMN + 1
+    SUB_QUESTION_COUNT = 4
+    ANSWER_COLUMN = SUB_QUESTION_COLUMN + SUB_QUESTION_COUNT
+    FALSE_ANSWER_COLUMN = ANSWER_COLUMN + 1
+    FALSE_ANSWER_COUNT = 4
     questions = {}
     csv_input = csv.reader(input, dialect=csv.excel, delimiter=';')
     for line in csv_input:
@@ -18,15 +24,25 @@ def generate_questions(input, output, delimiter):
             level = str(int(cols[0]) - 1)
             if level not in questions:
                 questions[level] = []
-            questions[level].append({
-                "question": cols[1].replace('\\r\\n', '<br />'),
+            new_question = {
+                "question": {
+                    "type": int(cols[1]),
+                    "text": cols[QUESTION_COLUMN],
+                    "sub_questions": []
+                },
                 "answers": [
-                    {"text": cols[2], "valid": True},
-                    {"text": cols[3], "valid": False},
-                    {"text": cols[4], "valid": False},
-                    {"text": cols[5], "valid": False}
+                    {"text": cols[ANSWER_COLUMN], "valid": True}
                 ]
-            })
+            }
+            for k in range(FALSE_ANSWER_COUNT):
+                if cols[k+FALSE_ANSWER_COLUMN] and cols[k+FALSE_ANSWER_COLUMN] != "":
+                    new_question["answers"].append(
+                        {"text": cols[k+FALSE_ANSWER_COLUMN], "valid": False})
+            for k in range(SUB_QUESTION_COUNT):
+                if cols[k+SUB_QUESTION_COLUMN] and cols[k+SUB_QUESTION_COLUMN] != "":
+                    new_question["question"]["sub_questions"].append(
+                        cols[k+SUB_QUESTION_COLUMN])
+            questions[level].append(new_question)
         except Exception as e:
             print(str(e))
             pass

@@ -1,24 +1,43 @@
-﻿level;question;valid_answer;fake answer 1;fake answer 2;fake answer 3
-1;"How do you say ""Hello."" in Korean?";안녕하세요. [An-nyeong-ha-se-yo.];만나서 반가워요. [Man-na-seo ban-ga-weo-yo.];안녕히 가세요. [An-nyeong-hi ka-se-yo.];감사합니다. [Kam-sa-ham-ni-da.]
-1;"How do you say ""Nice to meet you."" in Korean?";만나서 반가워요. [Man-na-seo ban-ga-weo-yo.];안녕히 계세요. [An-nyeong-hi gye-se-yo.];감사합니다. [Kam-sa-ham-ni-da.];천만해요. [Cheon-man-hae-yo.]
-1;"How do you say ""I am a teacher."" in Korean?";저는 선생님이에요. [Jeo-neun seon-saeng-nim-i-e-yo.];저는 학생이에요. [Jeo-neun hak-saeng-i-e-yo.];저는 선생님예요. [Jeo-neun seon-saeng-nim-ye-yo.];저는 가수예요. [Jeo-neun ga-su-ye-yo.]
-1;"How do you say ""How much is it?"" in Korean?";얼마예요? [Eol-ma-ye-yo?];어디에 있어요? [Eo-di-e iss-eo-yo?];아니에요? [A-ni-e-yo?];이거예요? [I-geo-ye-yo?]
-1;"How do you say ""Where are you going now?"" in Korean?";지금 어디에 가요? [Ji-geum eo-di-e ka-yo?];지금 어디에 자요? [Ji-geum eo-di-e ja-yo?];지금 어디에 살아요? [Ji-geum eo-di-e sar-a-yo?];지금 어디에 있어요? [Ji-geum eo-di-e iss-eo-yo?]
-1;"How do you say ""Kimchi is delicious."" in Korean?";김치가 맛있어요.;김치이 맛있어요.;김치가 안 맛있어요.;김치이 안 맛있어요.
-1;"How do you say ""It is 3:37p.m."" in Korean?";오후 세 시 삼십칠 분이에요.;오후 세 시 사십오 분이에요.;오전 세 시 이십구 분이에요.;오전 세 시 오십삼 분이에요.
-1;"How do you say ""It is Friday."" in Korean?";금요일이에요.;목요일이에요.;화요일이에요.;일요일이에요.
-1;"How do you say ""Where shall we meet?"" in Korean?";어디에서 만날까요?;언제 만날까요?;어떻게 만날까요?;누가 만날까요?
-1;Choose the correct answer.;안에 = Inside;위에 = Under;뒤에 = Above;왼쪽 = Right sides
-1;Choose the correct answer.;이다 = To be;이다 = To have;있다 = To be;이따 = To have
-1;Choose the correct answer.;나무 = Tree;너무 = Tree;니무 = Tree;누무 = Tree
-1;"How do you say ""I like cakes."" in Korean?";케이크를 좋아해요.;케이크가 맛없어요.;케이크를 좋아요.;케이크가 밋있어요.
-2;Choose the correct answer.;가족 = family;작년 = this year;결혼하다 = to divorce;싫어하다 = to love
-2;"How do you say ""How long does it take from here?"" in Korean?";여기에서 얼마나 걸려요?;저기에서 얼마나 걸려요?;여기에서 어떻게 걸려요?;얼마나 걸려요?
-2;"How do you say ""Where do I get off?"" in Korean?";어디에서 내려요?;여기서 만나요?;지금 가요?;어디에서 볼까요?
-2;"How do you say ""I'm sorry that I'm late."" in Korean?";늦게와서 죄송해요.;일찍와서 죄송해요.;방금와서 감사해요.;늦게와서 고마워요.
-2;Choose the correct answer.;우체국 = post office;숟가락 = chopsticks;젓가락 = spoons;공항 = airplane
-2;"How do you say ""Can you play tennis?"" in Korean?";테니스 칠 수 있어요?;농구를 할 수 있어요?;축구를 좋아해요?;테니스 칠 수 없어요?
-2;"How do you say ""What movie do you want to see?"" in Korean?";무슨 영화를 보고 싶어요?;어떤 드라마를 보고 싶어요?;어디 영화를 알고 싶어요?;무슨 영화를 볼 거예요?
-2;"How do you say ""010-5437-8126."" in Korean?";공일공 오사삼칠 팔일이육.;공일공 오삼칠사 팔이이육.;공일공 오삼삼사 팔일이육.;공일공 오사삼칠 팔이삼팔.
-2;"How do you say ""Why don't you work out?"" in Korean?";운동하는 게 어때요?;공부하는 게 어때요?;노래하는 게 어때요?;걷는 게 어때요?
-2;"How do you say ""Jake is wearing sneakers."" in Korean?";제이크는 운동화를 신고 있어요.;제이크는 운동화를 입고 있어요.;제이크는 운동화를 벗고 있어요.;제이크는 운동화를 사고 있어요.
+﻿level;type;question;sub_question 1;sub_question 2;sub_question 3;sub_question 4;valid_answer;fake answer 1;fake answer 2;fake answer 3;fake answer 4
+1;0;"How do you say ""Hello."" in Korean?";;;;;안녕하세요. [An-nyeong-ha-se-yo.];만나서 반가워요. [Man-na-seo ban-ga-weo-yo.];안녕히 가세요. [An-nyeong-hi ka-se-yo.];감사합니다. [Kam-sa-ham-ni-da.];
+1;0;"How do you say ""Nice to meet you."" in Korean?";;;;;만나서 반가워요. [Man-na-seo ban-ga-weo-yo.];안녕히 계세요. [An-nyeong-hi gye-se-yo.];감사합니다. [Kam-sa-ham-ni-da.];천만해요. [Cheon-man-hae-yo.];
+1;0;"How do you say ""I am a teacher."" in Korean?";;;;;저는 선생님이에요. [Jeo-neun seon-saeng-nim-i-e-yo.];저는 학생이에요. [Jeo-neun hak-saeng-i-e-yo.];저는 선생님예요. [Jeo-neun seon-saeng-nim-ye-yo.];저는 가수예요. [Jeo-neun ga-su-ye-yo.];
+1;0;"How do you say ""How much is it?"" in Korean?";;;;;얼마예요? [Eol-ma-ye-yo?];어디에 있어요? [Eo-di-e iss-eo-yo?];아니에요? [A-ni-e-yo?];이거예요? [I-geo-ye-yo?];
+1;0;"How do you say ""Where are you going now?"" in Korean?";;;;;지금 어디에 가요? [Ji-geum eo-di-e ka-yo?];지금 어디에 자요? [Ji-geum eo-di-e ja-yo?];지금 어디에 살아요? [Ji-geum eo-di-e sar-a-yo?];지금 어디에 있어요? [Ji-geum eo-di-e iss-eo-yo?];
+1;0;"How do you say ""Kimchi is delicious."" in Korean?";;;;;김치가 맛있어요.;김치이 맛있어요.;김치가 안 맛있어요.;김치이 안 맛있어요.;
+1;0;"How do you say ""It is 3:37p.m."" in Korean?";;;;;오후 세 시 삼십칠 분이에요.;오후 세 시 사십오 분이에요.;오전 세 시 이십구 분이에요.;오전 세 시 오십삼 분이에요.;
+1;0;"How do you say ""It is Friday."" in Korean?";;;;;금요일이에요.;목요일이에요.;화요일이에요.;일요일이에요.;
+1;0;"How do you say ""Where shall we meet?"" in Korean?";;;;;어디에서 만날까요?;언제 만날까요?;어떻게 만날까요?;누가 만날까요?;
+1;0;Choose the correct answer.;;;;;안에 = Inside;위에 = Under;뒤에 = Above;왼쪽 = Right sides;
+1;0;Choose the correct answer.;;;;;이다 = To be;이다 = To have;있다 = To be;이따 = To have;
+1;0;Choose the correct answer.;;;;;나무 = Tree;너무 = Tree;니무 = Tree;누무 = Tree;
+1;0;"How do you say ""I like cakes."" in Korean?";;;;;케이크를 좋아해요.;케이크가 맛없어요.;케이크를 좋아요.;케이크가 밋있어요.;
+1;0;Choose the correct answer.;;;;;신문 / newspaper;고향/ city;가수 / teacher;주말 / weekdays;
+1;0;How do you say “I only bought fruit at the store” in Korean?;;;;;가게에서 과일밖에 안 샀어요.;가게에서 책밖에 샀어요.;서점에서 과일만 안 샀어요.;서점에서 책밖에 안 샀어요.;
+1;0;How do you say “It’s been two years since I came to Korea” in Korean?;;;;;한국에 온 지 2년이 되었습니다.;한국에 여행한 지 2년이 되었습니다.;한국에 산 지 2년이 되었습니다.;한국에 적응한 지 2년 되었습니다.;
+2;0;Choose the correct answer.;;;;;가족 = family;작년 = this year;결혼하다 = to divorce;싫어하다 = to love;
+2;0;"How do you say ""How long does it take from here?"" in Korean?";;;;;여기에서 얼마나 걸려요?;저기에서 얼마나 걸려요?;여기에서 어떻게 걸려요?;얼마나 걸려요?;
+2;0;"How do you say ""Where do I get off?"" in Korean?";;;;;어디에서 내려요?;여기서 만나요?;지금 가요?;어디에서 볼까요?;
+2;0;"How do you say ""I'm sorry that I'm late."" in Korean?";;;;;늦게와서 죄송해요.;일찍와서 죄송해요.;방금와서 감사해요.;늦게와서 고마워요.;
+2;0;Choose the correct answer.;;;;;우체국 = post office;숟가락 = chopsticks;젓가락 = spoons;공항 = airplane;
+2;0;"How do you say ""Can you play tennis?"" in Korean?";;;;;테니스 칠 수 있어요?;농구를 할 수 있어요?;축구를 좋아해요?;테니스 칠 수 없어요?;
+2;0;"How do you say ""What movie do you want to see?"" in Korean?";;;;;무슨 영화를 보고 싶어요?;어떤 드라마를 보고 싶어요?;어디 영화를 알고 싶어요?;무슨 영화를 볼 거예요?;
+2;0;"How do you say ""010-5437-8126."" in Korean?";;;;;공일공 오사삼칠 팔일이육.;공일공 오삼칠사 팔이이육.;공일공 오삼삼사 팔일이육.;공일공 오사삼칠 팔이삼팔.;
+2;0;"How do you say ""Why don't you work out?"" in Korean?";;;;;운동하는 게 어때요?;공부하는 게 어때요?;노래하는 게 어때요?;걷는 게 어때요?;
+2;0;"How do you say ""Jake is wearing sneakers."" in Korean?";;;;;제이크는 운동화를 신고 있어요.;제이크는 운동화를 입고 있어요.;제이크는 운동화를 벗고 있어요.;제이크는 운동화를 사고 있어요.;
+2;0;How do you say “When I arrived at home, it was midnight.” in Korean?;;;;;집에 오니까 밤 12시였어요.;집에 가면 밤 12시였어요.;집에 가니까 오전 12시였어요.;집에 와서 밤 오전 12시였어요.;
+2;0;Choose the wrong answer.;;;;;대학교에 입학하려고 열심히 공부하세요.;대학교에 입학하려고 열심히 공부했어요.;대학교에 입학하기 위해서 열심히 공부하세요.;대학교에 입학하기 위해서 열심히 공부해야 해요.;대학교에 입학하기 위해서 열심히 공부했어요.
+2;0;Choose the correct answer.;;;;;존 씨가 저녁에 전화할 거예요.;저는 이제부터 날씬할게요.;오늘 오후에는 바람이 불게요.;존씨는 이제 늦지 않을게요.;
+3;1;( )에 들어갈 가장 알맞은 것을 고르십시오.;게임을 ( ) 학원에 지각했다.;;;;하다가;했다가;하려고;하고;
+3;1;( )에 들어갈 가장 알맞은 것을 고르십시오.;BTS 덕분에 한국을 더 좋아( ).;;;;하게 되었다.;하다.;했었다;할 것이다.;
+3;1;다음 빈칸에 공통적으로 들어갈 단어를 고르세요.;ㆍ여행 ( ) 좋아해요.;ㆍ등산 ( ) 좋아해요.;ㆍ사냥 ( ) 좋아해요.;;하는 것을;하고 싶어서;하기 떄문에;하면서;
+3;1;다음을 순서대로 맞게 나열한 것을 고르십시오.;(A) 그래서 건강에 관심이 생겼습니다.;(B) 내일부터 학교에 걸어 다닐 겁니다.;(C) 건강을 위해서 운동을 하려고 합니다.;(D) 요즘 조금만 일해도 빨리 피곤해집니다.;D-A-C-B;A-C-B-D;A-B-C-D;B-C-A-D;C-A-B-D
+3;1;다음을 순서대로 맞게 나열한 것을 고르십시오.;(A) 학교 앞에서 어린이 교통사고가 많이 일어납니다.;(B) 또 어린이들이 갑자기 도로로 나올 때도 있습니다.;(C) 그래서 학교 앞에서 운전할 때는 조심해야 합니다.;(D) 어린이는 키가 작아서 운전할 때 잘 보이지 않습니다.;A-D-B-C;A-D-C-B;D-C-B-A;A-B-C-D;B-C-A-D
+3;0;다음 보기를 보고 “-아서/어서”를 문법적으로 맞게 사용한 것을 고르세요.;;;;;자르다 -> 잘라서;모르다 -> 모르서;빠르다 -> 빠르서;부르다 -> 불르서;기르다 -> 길어서
+3;1;다음중 보기를 보고 괄호( )에 들어갈 말을 고르시오.;목이 마르면 물을 ( ) 그래?;;;;마시지;마르면;마실수;마시면;마시어
+3;1;다음 보기를 보고 괄호( )에 적합한 단어를 고르시오.;;( )하고 집에 오면 너무 피곤해요;;;퇴근;직장;사무실;휴가;
+3;1;다음 보기를 보고 괄호( )에 적합한 단어를 고르시오.;아침에 일찍 ( ) 새벽 5시 기차를 탈 수 있다.;;;;일어나야;일어나면서;일어나;일어나고서;
+3;1;다음 보기를 보고 괄호( )에 적합한 단어를 고르시오.;눈 때문에 세상이 다 ( ).;;;;하얘요.;하야요.;까먜요.;까매요.;
+3;1;다음 보기를 보고 괄호( )에 적합한 단어를 고르시오.;음악을 ( ) 운동해요.;;;;들으면서;듣고;들으며;들고;
+3;1;다음 글을 보고 무엇에 관한 글인지 고르시오.;최대 규모의 상영관 ! 최고의 화질을 보장 합니다.;;;;영화관;극장;병원;영사관;
+3;1;다음 글을 보고 무엇에 관한 글인지 고르시오.;ㆍ시원한 장소에 보관하십시오.;ㆍ유통기한을 준수 하십시오.;;;주의 사항;재료 안내;구매 방법;제품 문의;

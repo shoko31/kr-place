@@ -1,13 +1,19 @@
 <template>
-  <div :if="question && question.question" class="question">
+  <div
+    :if="question && question.question"
+    class="question"
+    :style="questionResponsiveStyles[question.question.type]"
+  >
     <transition name="fade-question" mode="out-in">
-      <h1
-        :key="question.question"
-        class="title"
-      >Q{{ $store.getters.questionAnswered + 1 }}. {{ question.question }}</h1>
+      <QuestionTitle :question="question.question" class="title" />
     </transition>
     <transition name="fade-question" mode="out-in">
-      <div :key="question.answers[0].text" ref="answers" class="answers">
+      <div
+        :key="question.answers[0].text"
+        ref="answers"
+        class="answers"
+        :style="answerGridRowCount"
+      >
         <Radio
           class="answer"
           v-for="(answer, index) in question.answers"
@@ -46,6 +52,7 @@
 <script>
 import Button from "@/components/Button.vue";
 import Radio from "@/components/Radio.vue";
+import QuestionTitle from "@/components/QuestionTitle.vue";
 
 export default {
   name: "QuestionModule",
@@ -54,7 +61,11 @@ export default {
     return {
       picked: -1,
       showingAnswer: false,
-      answerMapping: [0, 1, 2, 3]
+      answerMapping: [0, 1, 2, 3],
+      questionResponsiveStyles: [
+        { "grid-template-rows": "40px 1fr 2fr .5fr" },
+        { "grid-template-rows": "40px 1fr 2fr .5fr" }
+      ]
     };
   },
   computed: {
@@ -63,13 +74,16 @@ export default {
     },
     canContinue: function() {
       return this.$store.getters.mistakes < 3;
+    },
+    answerGridRowCount: function() {
+      return "grid-template-rows: auto;";
     }
   },
   methods: {
     submitAnswer: function() {
       if (this.picked !== -1) {
         this.showingAnswer = true;
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < this.question.answers.length; i++) {
           if (this.question.answers[i].valid === false && i === this.picked) {
             // INVALID ANSWER
             this.$store.commit("add_mistake");
@@ -105,7 +119,7 @@ export default {
       }
     });
   },
-  components: { Button, Radio }
+  components: { Button, Radio, QuestionTitle }
 };
 </script>
 
@@ -113,7 +127,6 @@ export default {
 .question {
   position: fixed;
   display: grid;
-  grid-template-rows: 40px 1fr 2fr 1fr;
   grid-template-columns: 40px 1fr 620px 1fr 40px;
   align-content: center;
   top: 0;
@@ -134,7 +147,6 @@ export default {
 .answers {
   align-self: stretch;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-row: 3;
   grid-column: 3;
 }
