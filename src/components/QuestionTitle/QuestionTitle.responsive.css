@@ -1,0 +1,24 @@
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    h1 {
+        font-size: .65em;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    li {
+        font-size: 0.58em;
+    }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {}

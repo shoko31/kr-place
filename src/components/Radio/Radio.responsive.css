@@ -1,0 +1,30 @@
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    .inputGroup {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .inputGroup>label {
+        font-size: 14px;
+        grid-template-columns: 40px auto 60px;
+    }
+
+    .inputGroup>input {
+        right: 15px;
+    }
+
+    .inputGroup>label:after {
+        right: 15px;
+    }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {}

@@ -1,6 +1,6 @@
 // vue.config.js
 module.exports = {
     // options...
-    "publicPath": "/kr-place/"
-    // "publicPath": "/"
+    // "publicPath": "/kr-place/"
+    "publicPath": "/"
 }

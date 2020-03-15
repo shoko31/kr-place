@@ -1,0 +1,97 @@
+/* radio button */
+.inputGroup {
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #fff;
+    display: block;
+    margin: 15px 0;
+    position: relative;
+    box-shadow: 2px 2px 3px #606970;
+}
+
+.inputGroup>label {
+    color: #3c454c;
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: 60px auto 60px;
+    grid-template-rows: 1fr;
+    font-size: 16px;
+}
+
+.inputGroup>input {
+    width: 32px;
+    height: 32px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    margin: 0;
+    right: 30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.inputGroup>label:after {
+    position: absolute;
+    content: " ";
+    background: white;
+    border: 1px solid #333;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    right: 30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    visibility: visible;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.1s ease-in;
+}
+
+.inputGroup.valid input~label:after {
+    background-color: #54e0c7 !important;
+    border-color: #54e0c7 !important;
+}
+
+.inputGroup.invalid input~label:after {
+    background-color: #e05454 !important;
+    border-color: #e05454 !important;
+}
+
+.inputGroup input:checked~label:after {
+    background-color: #5495e0;
+    border-color: #5495e0;
+}
+
+/* .inputGroup input:checked ~ input:before {
+    background-color: #54E0C7;
+    border-color: #54E0C7;
+  } */
+/* .inputGroup input:checked ~ label {
+    background-color: #54E0C7;
+    border-color: #54E0C7;
+  } */
+
+.inputGroup>label>span {
+    user-select: none;
+}
+
+.inputGroup>label>span:nth-child(1) {
+    place-self: center center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.inputGroup>label>span:nth-child(2) {
+    place-self: center left;
+    grid-column: 2;
+    grid-row: 1;
+}

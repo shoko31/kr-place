@@ -16,9 +16,9 @@
 
 <script>
 import questions from "@/assets/questions";
-import QuestionModule from "@/components/Question.vue";
-import Progress from "@/components/Progress.vue";
-import Firework from "@/components/Firework.vue";
+import QuestionModule from "@/components/Question/Question.vue";
+import Progress from "@/components/Progress/Progress.vue";
+import Firework from "@/components/Firework/Firework.vue";
 import { e_levels } from "@/enums/levels.enum";
 
 export default {

@@ -1,8 +1,5 @@
 <template>
-  <div
-    :style="{ backgroundColor: bgColor, borderColor: borderColor }"
-    class="progress-bar"
-  >
+  <div :style="{ backgroundColor: bgColor, borderColor: borderColor }" class="progress-bar">
     <div class="filler" :style="{ right: progressValue }"></div>
     <label :style="{ justifySelf: justify, alignSelf: align }">
       <slot></slot>
@@ -36,7 +33,7 @@ export default {
   display: grid;
   height: 100%;
   width: 100%;
-  border: 1px solid #777;
+  border-top: 1px solid #777;
 }
 .filler {
   position: absolute;

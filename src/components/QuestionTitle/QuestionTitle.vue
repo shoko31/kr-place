@@ -1,9 +1,6 @@
 <template>
   <div :if="question && question.text">
-    <h1
-      :key="question.text"
-      :style="mainTextStyle"
-    >Q{{ $store.getters.questionAnswered + 1 }}. {{ question.text }}</h1>
+    <h1 :key="question.text">Q{{ $store.getters.questionAnswered + 1 }}. {{ question.text }}</h1>
     <ul :if="question.sub_questions && question.sub_questions.length > 0">
       <li v-for="subq in question.sub_questions" :key="subq">{{subq}}</li>
     </ul>
@@ -13,18 +10,14 @@
 <script>
 export default {
   name: "QuestionTitleModule",
-  props: ["question"],
-  data: function() {
-    return {
-      mainTextStyle: {
-        "font-size": "1em"
-      }
-    };
-  }
+  props: ["question"]
 };
 </script>
 
-<style>
+<style scoped>
+h1 {
+  font-size: 1em;
+}
 ul {
   margin: 0;
   margin-top: 20px;
@@ -35,3 +28,4 @@ li {
   font-size: 0.7em;
 }
 </style>
+<style src="./QuestionTitle.responsive.css" scoped></style>

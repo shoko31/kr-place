@@ -1,0 +1,21 @@
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    .question {
+        grid-template-columns: 10px 0fr 1fr 0fr 10px;
+        grid-template-rows: 10px 1fr 3fr .5fr;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {}

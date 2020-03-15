@@ -30,8 +30,8 @@
 
 <script>
 import { e_levels } from "@/enums/levels.enum";
-import Button from "@/components/Button.vue";
-import Firework from "@/components/Firework.vue";
+import Button from "@/components/Button/Button.vue";
+import Firework from "@/components/Firework/Firework.vue";
 
 export default {
   name: "home",
@@ -67,89 +67,5 @@ export default {
 };
 </script>
 
-<style>
-:root {
-  --bg-color: #3498db;
-}
-h1 {
-  font-size: 5em;
-}
-h3 {
-  font-size: 1.5em;
-}
-h1,
-h3 {
-  margin: 5px;
-  font-weight: 600;
-}
-p {
-  font-size: 18px;
-  margin: 35px;
-  margin-bottom: 5px;
-}
-.home {
-  position: fixed;
-  display: flex;
-  padding: 60px;
-  justify-content: center;
-  flex-direction: column;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--bg-color);
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-}
-.badge {
-  background: #b573d0;
-  box-shadow: 0px 0px 3px #82409d;
-  color: white;
-  font-weight: 600;
-  border-radius: 25px;
-  padding: 10px 20px;
-  margin: 5px;
-  display: inline-block;
-}
-footer {
-  position: absolute;
-  bottom: 5px;
-  text-align: center;
-  left: 0px;
-  right: 0px;
-  font-stretch: condensed;
-  color: #459;
-  user-select: none;
-}
-fireworks {
-  z-index: 99;
-}
-.fadeout {
-  animation: fadeout 0.4s;
-  animation-fill-mode: both;
-}
-.popout {
-  animation: popout 0.4s;
-  animation-fill-mode: forwards;
-}
-@keyframes popout {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.2) rotate(-10deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-</style>
+<style src="./Home.css"></style>
+<style src="./Home.responsive.css"></style>

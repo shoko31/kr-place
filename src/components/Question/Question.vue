@@ -1,9 +1,5 @@
 <template>
-  <div
-    :if="question && question.question"
-    class="question"
-    :style="questionResponsiveStyles[question.question.type]"
-  >
+  <div :if="question && question.question" class="question">
     <transition name="fade-question" mode="out-in">
       <QuestionTitle :question="question.question" class="title" />
     </transition>
@@ -50,9 +46,9 @@
 </template>
 
 <script>
-import Button from "@/components/Button.vue";
-import Radio from "@/components/Radio.vue";
-import QuestionTitle from "@/components/QuestionTitle.vue";
+import Button from "@/components/Button/Button.vue";
+import Radio from "@/components/Radio/Radio.vue";
+import QuestionTitle from "@/components/QuestionTitle/QuestionTitle.vue";
 
 export default {
   name: "QuestionModule",
@@ -61,11 +57,7 @@ export default {
     return {
       picked: -1,
       showingAnswer: false,
-      answerMapping: [0, 1, 2, 3],
-      questionResponsiveStyles: [
-        { "grid-template-rows": "40px 1fr 2fr .5fr" },
-        { "grid-template-rows": "40px 1fr 2fr .5fr" }
-      ]
+      answerMapping: [0, 1, 2, 3]
     };
   },
   computed: {
@@ -123,43 +115,5 @@ export default {
 };
 </script>
 
-<style>
-.question {
-  position: fixed;
-  display: grid;
-  grid-template-columns: 40px 1fr 620px 1fr 40px;
-  align-content: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--bg-color);
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-}
-
-.title {
-  align-self: center;
-  grid-column: 2 / span 3;
-  grid-row: 2;
-  padding-bottom: 40px;
-  font-size: 3rem;
-}
-.answers {
-  align-self: stretch;
-  display: grid;
-  grid-row: 3;
-  grid-column: 3;
-}
-a {
-  display: inline-block;
-  justify-self: right;
-  align-self: center;
-}
-.fade-question-enter-active,
-.fade-question-leave-active {
-  transition: opacity 0.3s;
-}
-.fade-question-enter, .fade-question-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-</style>
+<style src="./Question.css"></style>
+<style src="./Question.responsive.css"></style>
